@@ -239,6 +239,14 @@ textarea {
     margin:0 30px;
    }
 
+   #mc_embed_shell {
+    background:none;
+    max-width: 300px;
+   }
+   #mc_embed_signup {
+    width:100%;
+   }
+
    @media (max-width: 800px) {
       .nav {
        display: block;
