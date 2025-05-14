@@ -234,11 +234,12 @@ textarea {
    }
 
    .footer-logo img{
-    width:100%;
+    max-width:200px;
+    margin-bottom:3em;
    }
 
    .footer-logo{
-    max-width: 200px;
+    
    }
 
    .footercol-1 {
@@ -265,6 +266,16 @@ textarea {
     width:100%;
 
    }
+
+   .mc-field-group:nth-child(4){
+width:48%;
+margin-right:4%;
+float:left;
+   }
+   .mc-field-group:nth-child(5){
+width:48%;
+float:left;
+   }
    .indicates-required{
     font-weight: 500;
     margin-bottom: 1em;
@@ -274,6 +285,9 @@ textarea {
     font-size: 16px;
     margin:0 0 1em 0;
     font-weight: 500;
+   }
+   .asterisk{
+    color:#B7A0EA;
    }
 
    #mc_embed_signup_scroll input[type=text],#mc_embed_signup_scroll input[type=email]{
@@ -295,6 +309,13 @@ textarea {
     border: none;
     margin:.5em 0;
     font-weight:800;
+    transition: 300ms;
+   }
+
+   #mc-embedded-subscribe:hover{
+    background:#ffffff;
+    cursor: pointer;
+
    }
 
 
@@ -347,6 +368,7 @@ textarea {
     border-left: none;
     border-top: solid 1px rgba(255,255,255,.3);
     padding: 3em 0 0 0;
+    margin-top: 3em;
    }
     }
 
