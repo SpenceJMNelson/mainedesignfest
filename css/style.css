@@ -144,6 +144,7 @@ textarea {
     color: #B7A0EA;
     line-height: 100%;
     margin:0;
+    font-variant-numeric: diagonal-fractions;
    }
 
    .event-item h4{
