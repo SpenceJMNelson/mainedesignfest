@@ -108,7 +108,7 @@ textarea {
    }
 
    .logo {
-    max-width:800px;
+    max-width:1280px;
     margin:0 auto;
     padding:0 2em;
     aspect-ratio: calc( 10 / 7 );
@@ -117,7 +117,7 @@ textarea {
 
    .logo p {
     max-width: 400px;
-    margin: 3em auto;
+    margin: 0 auto 3em auto;
     text-align: center;
 
    }
