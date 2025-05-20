@@ -3,5 +3,5 @@ var animation = bodymovin.loadAnimation({
   renderer: 'svg',
   loop: false,
   autoplay: true,
-  path: 'df-animation.json'
+  path: 'df-animation2.json'
 })
