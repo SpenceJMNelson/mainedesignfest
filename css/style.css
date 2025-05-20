@@ -343,17 +343,20 @@ float:left;
    @media (max-width: 800px) {
       .nav {
        display: block;
+       padding:2em;
       }
       .aigalogo {
         width:20%;
- 
+        margin:0 auto;
       }
+      
       .nav a {
         padding:.6em;
 
       }
       .nav ul {
         padding:2em 0;
+        text-align: center;
       }
       .event-items-wrapper {
         display: block;
