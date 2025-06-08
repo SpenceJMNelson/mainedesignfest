@@ -198,7 +198,7 @@ textarea {
 
    .sponsors{
     text-align: center;
-    max-width: 500px;
+    max-width: 800px;
     margin:40px auto;
     padding:2em;
    }
@@ -229,6 +229,13 @@ textarea {
    .adobe-logo{
     max-width:200px;
     height:auto;
+   }
+   .additional-logos {
+
+   }
+   .additional-logos img {
+    max-width: 150px;
+    margin:20px;
    }
    .aigalogo {
     width:20%;
