@@ -560,6 +560,12 @@ float:left;
         width:20%;
         margin:0 auto;
       }
+
+      #bm {
+        margin-left: -40px;
+        margin-right:-40px;
+        margin-top: -30px;
+      }
       
       .nav a {
         padding:.6em;
