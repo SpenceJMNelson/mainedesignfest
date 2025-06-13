@@ -546,6 +546,10 @@ float:left;
       .event-item {
         width:100%;
       }
+
+      strong {
+    font-weight: 900;
+    }
       
       .event-item:nth-child(odd) {
     margin-top:0;
