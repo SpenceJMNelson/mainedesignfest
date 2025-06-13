@@ -327,8 +327,20 @@ textarea {
 
    .semicircle-upper , .semicircle-lower {
     height:0px;
+   }
+
+ .semicircle-upper{
     transition: 300ms;
-    transform: scale(1.2);
+    transform: scale(1) translateX(-1px);
+ }
+
+   
+   .conference-section:hover .semicircle-upper{
+    transform: scale(1.4) translateX(-1px);
+   }
+
+   .semicircle-lower{
+    transform: scale(1.4) translateX(1px);
    }
 
    .semicircle-upper > img , .semicircle-lower > img {
