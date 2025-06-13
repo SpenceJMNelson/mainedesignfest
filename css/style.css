@@ -546,8 +546,10 @@ float:left;
       .event-item {
         width:100%;
       }
+      
       .event-item:nth-child(odd) {
     margin-top:0;
+    margin-bottom:0;
     text-align: left;
    }
       .footer {
