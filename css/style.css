@@ -127,6 +127,7 @@ textarea {
     background:#ffffff!important;
     border-color: #ffffff!important;
     color:#142D52!important;
+    transform: scale(1.1);
    }
 
    .logo {
@@ -306,11 +307,14 @@ textarea {
     background:#0F2546;
     color:#ffffff;
     font-size:21px;
+    border: none;
+    border: 3px solid #0F2546!important;
    }
 
    .conference-intro.event-item a:hover{
     background:#ffffff;
-    color:#0F2546
+    color:#0F2546;
+    border: 3px solid #0F2546!important;
    }
 
    .conference-intro.event-item h3{
@@ -335,9 +339,7 @@ textarea {
  }
 
    
-   .conference-section:hover .semicircle-upper{
-    transform: scale(1.4) translateX(-1px);
-   }
+
 
    .semicircle-lower{
     transform: scale(1.4) translateX(1px);
