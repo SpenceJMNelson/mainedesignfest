@@ -278,9 +278,8 @@ textarea {
 
    .conference-intro.event-item h3{
     margin:0 auto;
-    background:none;
-    font-size:150px;
-    display: inline;
+    background:#0F2546;
+    color: #E1F4E4;
    }
 
    .conference-intro.event-item h4{
