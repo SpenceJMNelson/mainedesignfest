@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 /*
@@ -205,7 +206,7 @@ textarea {
    }
 
     .event-item:nth-child(1) h3{
-      background:#D6EA9F;
+      background:#FFECA8;
     }
 
     .event-item:nth-child(2) h3{
@@ -213,11 +214,11 @@ textarea {
     }
 
     .event-item:nth-child(3) h3{
-      background:#FCC6A7;
+      background:#D6EA9F;
     }
 
     .event-item:nth-child(4) h3{
-      background:#D6EA9F;
+      background:#FCC6A7;
     }
 
     .event-item:nth-child(5) h3{
@@ -303,7 +304,8 @@ textarea {
 
    .conference-intro.event-item a{
     background:#0F2546;
-    color:#ffffff
+    color:#ffffff;
+    font-size:21px;
    }
 
    .conference-intro.event-item a:hover{
@@ -326,6 +328,7 @@ textarea {
    .semicircle-upper , .semicircle-lower {
     height:0px;
     transition: 300ms;
+    transform: scale(1.2);
    }
 
    .semicircle-upper > img , .semicircle-lower > img {
@@ -341,9 +344,7 @@ textarea {
     transform:translateY(0%);
    }
 
-     .conference-section:hover .semicircle-upper {
-    transform: scale(1.2);
-   }
+ 
 
    .conference-inner {
     max-width: 1024px;
