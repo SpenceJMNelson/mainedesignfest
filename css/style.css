@@ -230,8 +230,8 @@ textarea {
     }
 
     .event-item:nth-child(1) a{
-      border-color:#D6EA9F;
-      color:#D6EA9F;
+      border-color:#FFECA8;
+      color:#FFECA8;
     }
 
     .event-item:nth-child(2) a{
@@ -240,13 +240,13 @@ textarea {
     }
 
     .event-item:nth-child(3) a{
-      border-color:#FCC6A7;
-      color:#FCC6A7;
+      border-color:#D6EA9F;
+      color:#D6EA9F;
     }
 
     .event-item:nth-child(4) a{
-      border-color:#D6EA9F;
-      color:#D6EA9F;
+      border-color:#FCC6A7;
+      color:#FCC6A7;
     }
 
     .event-item:nth-child(5) a{
