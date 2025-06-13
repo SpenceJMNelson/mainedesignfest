@@ -109,18 +109,23 @@ textarea {
    }
 
    a.button {
-    padding:.8em;
-    background:#B7A0EA;
-    color:#142D52;
+    padding:.6em 1em;
+    color:#ffffff;
     font-weight: bold;
     text-decoration: none;
     margin-top:.6em;
     margin-right:.6em;
     display: inline-block;
+    border-radius:100px;
+    border-width: 2px;
+    border-style: solid;
    }
+   
 
    a.button:hover {
     background:#ffffff!important;
+    border-color: #ffffff!important;
+    color:#142D52!important;
    }
 
    .logo {
@@ -158,31 +163,27 @@ textarea {
    }
 
    .event-items-wrapper {
-    max-width: 960px;
+    max-width: 1024px;
     display: flex;
     flex-wrap: wrap;
-    margin:150px auto 0 auto;
+    margin:250px auto 0 auto;
    }
 
    .event-item {
     width:50%;
     padding:2em;
     box-sizing: border-box;
-    opacity: 0.7;
-    transition: 300ms;
+
    }
 
-   .event-item:hover {
-    opacity:1
-   }
 
    .event-item:hover h3 {
     transform:scale(1.2)
    }
 
    .event-item:nth-child(odd) {
-    margin-top:-150px;
-    margin-bottom: 150px;
+    margin-top:-200px;
+    margin-bottom: 200px;
    }
 
    .event-item h3{
@@ -192,7 +193,7 @@ textarea {
     line-height: 100%;
     margin:0;
     font-variant-numeric: diagonal-fractions;
-    background:pink;
+    background:#ffffff;
     width:100px;
     height:100px;
     display: block;
@@ -203,32 +204,62 @@ textarea {
     transition: 300ms;
    }
 
-    .event-item:nth-child(1) h3, .event-item:nth-child(1) a{
+    .event-item:nth-child(1) h3{
       background:#D6EA9F;
     }
 
-    .event-item:nth-child(2) h3, .event-item:nth-child(2) a{
+    .event-item:nth-child(2) h3{
       background:#8BA6E7;
     }
 
-    .event-item:nth-child(3) h3, .event-item:nth-child(3) a{
+    .event-item:nth-child(3) h3{
       background:#FCC6A7;
     }
 
-    .event-item:nth-child(4) h3, .event-item:nth-child(4) a{
+    .event-item:nth-child(4) h3{
       background:#D6EA9F;
     }
 
-    .event-item:nth-child(5) h3, .event-item:nth-child(5) a{
+    .event-item:nth-child(5) h3{
       background:#FA8DC8;
     }
 
-    .event-item:nth-child(6) h3, .event-item:nth-child(6) a{
+    .event-item:nth-child(6) h3{
       background:#F5F5F5;
     }
 
+    .event-item:nth-child(1) a{
+      border-color:#D6EA9F;
+      color:#D6EA9F;
+    }
+
+    .event-item:nth-child(2) a{
+      border-color:#8BA6E7;
+      color:#8BA6E7;
+    }
+
+    .event-item:nth-child(3) a{
+      border-color:#FCC6A7;
+      color:#FCC6A7;
+    }
+
+    .event-item:nth-child(4) a{
+      border-color:#D6EA9F;
+      color:#D6EA9F;
+    }
+
+    .event-item:nth-child(5) a{
+      border-color:#FA8DC8;
+      color:#FA8DC8;
+    }
+
+    .event-item:nth-child(6) a{
+      border-color:#F5F5F5;
+      color:#F5F5F5;
+    }
+
    .event-item h4{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 36px;
     line-height: 100%;
     margin: 0;
@@ -237,14 +268,14 @@ textarea {
     .event-item h5, .conference-item h5 {
     font-weight: 600;
     font-size: 21px;
-    line-height: 110%;
+    line-height: 140%;
     margin: 10px 0 0 0;
    }
 
    
 
    .event-item p, .logo p, .sponsors p{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 21px;
     line-height: 140%;
     opacity:80%;
@@ -306,7 +337,7 @@ textarea {
    }
 
    .conference-inner {
-    max-width: 1080px;
+    max-width: 1024px;
     margin:0 auto;
     padding:0 2em;
    }
