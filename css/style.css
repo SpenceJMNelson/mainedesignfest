@@ -287,6 +287,8 @@ textarea {
     margin:20vw 0;
    }
 
+ 
+
    .conference-intro.event-item{
     margin-top: -10vw !important;
     margin-bottom:60px;
@@ -323,6 +325,7 @@ textarea {
 
    .semicircle-upper , .semicircle-lower {
     height:0px;
+    transition: 300ms;
    }
 
    .semicircle-upper > img , .semicircle-lower > img {
@@ -336,6 +339,10 @@ textarea {
 
     .semicircle-lower > img {
     transform:translateY(0%);
+   }
+
+     .conference-section:hover .semicircle-upper {
+    transform: scale(1.2);
    }
 
    .conference-inner {
@@ -551,6 +558,8 @@ float:left;
     font-weight: 900;
     }
 
+    
+
 
    #mc_embed_signup{}
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
@@ -646,6 +655,8 @@ font-size: 40px;
 }
 
     }
+
+    
 
 /* ==========================================================================
    Helper classes
