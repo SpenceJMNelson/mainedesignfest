@@ -547,6 +547,9 @@ float:left;
     cursor: pointer;
 
    }
+   strong {
+    font-weight: 900;
+    }
 
 
    #mc_embed_signup{}
@@ -585,9 +588,7 @@ float:left;
         width:100%;
       }
 
-      strong {
-    font-weight: 900;
-    }
+      
       
       .event-item:nth-child(odd) {
     margin-top:0;
