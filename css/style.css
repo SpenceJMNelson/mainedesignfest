@@ -382,6 +382,10 @@ textarea {
     font-size:60px;
    }
 
+   .conference-intro p {
+    color: rgba(0, 0, 0, .7);
+   }
+
    
 
    .semicircle-upper , .semicircle-lower {
