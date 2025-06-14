@@ -104,6 +104,11 @@ textarea {
     
    }
 
+   #bm {
+        width:100%;
+        aspect-ratio: 10 / 7;
+      }
+
    a:hover {
     color: #B7A0EA;
     text-decoration:none;
@@ -670,6 +675,7 @@ float:left;
         margin-left: -40px;
         margin-right:-40px;
         margin-top: -30px;
+        
       }
       
       .nav a {
