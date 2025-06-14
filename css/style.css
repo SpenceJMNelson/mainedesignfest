@@ -325,7 +325,7 @@ textarea {
     font-weight: 400;
     font-size: 21px;
     line-height: 140%;
-    opacity:80%;
+    color:rgba(255,255,255,.7)
    }
 
    .conference-section{
