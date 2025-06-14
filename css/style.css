@@ -180,6 +180,7 @@ textarea {
     width:50%;
     padding:2em;
     box-sizing: border-box;
+    margin-bottom:100px;
    }
 
    .event-item > * {
@@ -692,6 +693,7 @@ float:left;
       }
       .event-item {
         width:100%;
+        margin-bottom:0px;
       }
 
       
