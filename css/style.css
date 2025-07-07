@@ -252,56 +252,56 @@ textarea {
     transform:scale(1)
    }
 
-    .event-item:nth-child(1) h3{
+    .event-item.event-coffee-coworking h3{
       background:#FFECA8;
     }
 
-    .event-item:nth-child(2) h3{
+    .event-item.event-fl-roundtable h3{
       background:#8BA6E7;
     }
 
-    .event-item:nth-child(3) h3{
+    .event-item.event-fireside-chat h3{
       background:#D6EA9F;
     }
 
-    .event-item:nth-child(4) h3{
+    .event-item.event-typewalk h3{
       background:#FCC6A7;
     }
 
-    .event-item:nth-child(5) h3{
+    .event-item.event-afterhours h3{
       background:#FA8DC8;
     }
 
-    .event-item:nth-child(6) h3{
+    .event-item.event-createnow h3{
       background:#F5F5F5;
     }
 
-    .event-item:nth-child(1) a{
+    .event-item.event-coffee-coworking a{
       border-color:#FFECA8;
       color:#FFECA8;
     }
 
-    .event-item:nth-child(2) a{
+    .event-item.event-fl-roundtable a{
       border-color:#8BA6E7;
       color:#8BA6E7;
     }
 
-    .event-item:nth-child(3) a{
+    .event-item.event-fireside-chat a{
       border-color:#D6EA9F;
       color:#D6EA9F;
     }
 
-    .event-item:nth-child(4) a{
+    .event-item.event-typewalk a{
       border-color:#FCC6A7;
       color:#FCC6A7;
     }
 
-    .event-item:nth-child(5) a{
+    .event-item.event-afterhours a{
       border-color:#FA8DC8;
       color:#FA8DC8;
     }
 
-    .event-item:nth-child(6) a{
+    .event-item.event-createnow a{
       border-color:#F5F5F5;
       color:#F5F5F5;
     }
