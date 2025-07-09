@@ -253,7 +253,7 @@ textarea {
    }
 
     .event-item.event-wip h3{
-      background:#FFECA8;
+      background:#C9D0D6;
     }
 
     .event-item.event-coffee-coworking h3{
@@ -281,7 +281,8 @@ textarea {
     }
 
     .event-item.event-wip a{
-      background:#FFECA8;
+      border-color:#C9D0D6;
+      color:#C9D0D6;
     }
 
     .event-item.event-coffee-coworking a{
