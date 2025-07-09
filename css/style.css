@@ -252,6 +252,10 @@ textarea {
     transform:scale(1)
    }
 
+    .event-item.event-wip h3{
+      background:#FFECA8;
+    }
+
     .event-item.event-coffee-coworking h3{
       background:#FFECA8;
     }
@@ -274,6 +278,10 @@ textarea {
 
     .event-item.event-createnow h3{
       background:#F5F5F5;
+    }
+
+    .event-item.event-wip a{
+      background:#FFECA8;
     }
 
     .event-item.event-coffee-coworking a{
