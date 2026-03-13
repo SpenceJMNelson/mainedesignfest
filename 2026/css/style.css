@@ -86,12 +86,23 @@ textarea {
 
    body {
     background-color: #F9D830;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
+    margin:0;
+    height:100%;
    }
    
-   body::before {
+   
+
+   .contentwrapper {
+    height:100vh;
+    min-height: 700px;
+    position: relative;
+    overflow: hidden;
+   }
+   
+   .contentwrapper::before {
     position: absolute;
     left: 0;
     top:0;
@@ -100,7 +111,6 @@ textarea {
     background: #000;
     content: "";
    }
-   
    .curiosity {
     width:110vw;
     height:36.666vw;
@@ -204,6 +214,25 @@ textarea {
     bottom:-5vw;
     right:-10vw;
    }
+
+  @media (max-width: 800px) {
+    .contentwrapper {
+      min-height: 600px;
+    }
+  }
+
+   @media (max-width: 600px) {
+    .contentwrapper {
+      min-height: 500px;
+    }
+
+    
+  }
+
+
+
+
+
 
 
 /* ==========================================================================
