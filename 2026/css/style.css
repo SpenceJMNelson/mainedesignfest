@@ -109,7 +109,7 @@ textarea {
     bottom:0;
     width:4vw;
     background-image: url(../img/stuff.webp);
-    background-size:100% auto;
+    background-size:150% auto;
     content: "";
     animation-name: background-move;
     animation-duration: 300s;
@@ -119,10 +119,10 @@ textarea {
 
    @keyframes background-move{
     0%{
-      background-position:0px 0px;
+      background-position:-12px 0px;
     }
     100%{
-      background-position:0px 4000px;
+      background-position:-12px 4000px;
     }
     
 
