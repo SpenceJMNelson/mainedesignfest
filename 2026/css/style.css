@@ -107,10 +107,28 @@ textarea {
     left: 0;
     top:0;
     bottom:0;
-    width:3vw;
-    background: #000;
+    width:4vw;
+    background-image: url(../img/stuff.webp);
+    background-size:100% auto;
     content: "";
+    animation-name: background-move;
+    animation-duration: 300s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
    }
+
+   @keyframes background-move{
+    0%{
+      background-position:0px 0px;
+    }
+    100%{
+      background-position:0px 4000px;
+    }
+    
+
+  }
+
+
    .curiosity {
     width:110vw;
     height:36.666vw;
