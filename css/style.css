@@ -15,7 +15,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
-  overflow-x: hidden;
 }
 
 /*
@@ -46,7 +45,6 @@ hr {
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
-  
 }
 
 /*
@@ -86,689 +84,174 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   body{
-    background-color: #142D52;
-    background-image: url(../img/bgsquiggle.svg);
-    background-size: 120%;
-    background-attachment: fixed;
-    background-position: center center;
-    color:#ffffff;
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+   body {
+    background-color: #F9D830;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
     margin:0;
+    height:100%;
    }
-   a{
-    color: inherit;
-    transition:300ms;
-    
-   }
-
-   #bm {
-        width:100%;
-        aspect-ratio: 10 / 7;
-      }
-
-   a:hover {
-    color: #B7A0EA;
-    text-decoration:none;
-   }
-
-   a.button {
-    padding:.6em 1em;
-    color:#ffffff;
-    font-weight: bold;
-    text-decoration: none;
-    margin-top:.6em;
-    margin-right:.6em;
-    display: inline-block;
-    border-radius:100px;
-    border-width: 2px;
-    border-style: solid;
-   }
-   
-
-   a.button:hover {
-    background:#ffffff!important;
-    border-color: #ffffff!important;
-    color:#142D52!important;
-    transform: scale(1.1);
-   }
-
-   .logo {
-    max-width:1000px;
-    margin:0 auto;
-    padding:0 2em;
-  
-
-   }
-
-   .logo p {
-    max-width: 400px;
-    margin: 0 auto 3em auto;
-    text-align: center;
-
-   }
-
-   .logo h4 {
-    font-weight:200;
-    letter-spacing:.2em;
-    text-align: center;
-    text-transform:uppercase;
-    font-size: 40px;
-    color:#E1F4E4;
-    margin-top:0;
-   }
-
-   .logo h4 span{
-    opacity:.3;
-   }
-
-   .logo img {
-    width:100%;
-    height:auto;
-   }
-
-   .event-items-wrapper {
-    max-width: 1024px;
-    display: flex;
-    flex-wrap: wrap;
-    margin:250px auto 0 auto;
-   }
-
-   .event-item {
-    width:50%;
-    padding:2em;
-    box-sizing: border-box;
-    margin-bottom:100px;
-   }
-
-   .event-item > * {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: 500ms;
-    }
-
-   .event-item.active > * {
-    opacity:1;
-    transform: translateY(0px);
-   }
-
-   .event-item.active > *:nth-child(2) {
-    transition-delay: 50ms;
-   }
-
-   .event-item.active > *:nth-child(3) {
-    transition-delay: 100ms;
-   }
-
-   .event-item.active > *:nth-child(4) {
-    transition-delay: 150ms;
-   }
-
-   .event-item.active > *:nth-child(5) {
-    transition-delay: 200ms;
-   }
-
-   .event-item.active > *:nth-child(6) {
-    transition-delay: 250ms;
-   }
-
-   .event-item.active > *:nth-child(7) {
-    transition-delay: 300ms;
-   }
-
    
    
 
-
-   
-
-   .event-item:nth-child(odd) {
-    margin-top:-200px;
-    margin-bottom: 200px;
-   }
-
-   .event-item h3{
-    font-weight: 200;
-    font-size: 80px;
-    color: #142D52;
-    line-height: 100%;
-    margin:0;
-    font-variant-numeric: diagonal-fractions;
-    background:#ffffff;
-    width:100px;
-    height:100px;
-    display: block;
-    padding:.15em .2em;
-    margin-bottom:.2em;
-    box-sizing: border-box;
-    border-radius: 100%;
-    transition: 500ms;
-    transform:scale(.8)
-   }
-
-   .event-item.active h3 {
-    transform:scale(1)
-   }
-
-    .event-item.event-wip h3{
-      background:#C9D0D6;
-    }
-
-    .event-item.event-coffee-coworking h3{
-      background:#FFECA8;
-    }
-
-    .event-item.event-fl-roundtable h3{
-      background:#8BA6E7;
-    }
-
-    .event-item.event-fireside-chat h3{
-      background:#D6EA9F;
-    }
-
-    .event-item.event-typewalk h3{
-      background:#FCC6A7;
-    }
-
-    .event-item.event-afterhours h3{
-      background:#FA8DC8;
-    }
-
-    .event-item.event-createnow h3{
-      background:#F5F5F5;
-    }
-
-    .event-item.event-wip a{
-      border-color:#C9D0D6;
-      color:#C9D0D6;
-    }
-
-    .event-item.event-coffee-coworking a{
-      border-color:#FFECA8;
-      color:#FFECA8;
-    }
-
-    .event-item.event-fl-roundtable a{
-      border-color:#8BA6E7;
-      color:#8BA6E7;
-    }
-
-    .event-item.event-fireside-chat a{
-      border-color:#D6EA9F;
-      color:#D6EA9F;
-    }
-
-    .event-item.event-typewalk a{
-      border-color:#FCC6A7;
-      color:#FCC6A7;
-    }
-
-    .event-item.event-afterhours a{
-      border-color:#FA8DC8;
-      color:#FA8DC8;
-    }
-
-    .event-item.event-createnow a{
-      border-color:#F5F5F5;
-      color:#F5F5F5;
-    }
-
-   .event-item h4{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 100%;
-    margin: 0;
-   }
-
-    .event-item h5, .conference-item h5 {
-    font-weight: 600;
-    font-size: 21px;
-    line-height: 140%;
-    margin: 10px 0 0 0;
-   }
-
-   
-
-   .event-item p, .logo p, .sponsors p{
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 140%;
-    color:rgba(255,255,255,.7)
-   }
-
-   .conference-section{
-    background: #E1F4E4;
-    color: #142D52;
-    margin:10vw 0;
-    opacity:0;
-    transform: translateY(100px);
-    transition: 500ms;
-   }
-
-   .conference-section.active{
-    margin:10vw 0 20vw 0;
-    opacity:1;
-    transform: translateY(0px);
-   }
-
- 
-
-   .conference-intro.event-item{
-    margin-top: -10vw !important;
-    margin-bottom:60px;
-    width:100%;
-    text-align: center;
+   .contentwrapper {
+    height:100vh;
+    min-height: 700px;
     position: relative;
-    z-index: 2;
-      opacity: 1;
-      padding-left:0;
-      padding-right:0;
+    overflow: hidden;
    }
-
-   .conference-intro.event-item a{
-    background:#0F2546;
-    color:#ffffff;
-    font-size:21px;
-    border: none;
-    border: 3px solid #0F2546!important;
-   }
-
-   .conference-intro.event-item a:hover{
-    background:#ffffff;
-    color:#0F2546;
-    border: 3px solid #0F2546!important;
-   }
-
-   .conference-intro.event-item h3{
-    margin:0 auto;
-    background:#0F2546;
-    color: #E1F4E4;
-   }
-
-   .conference-intro.event-item h4{
-    font-size:60px;
-   }
-
-   .conference-intro p {
-    color: rgba(0, 0, 0, .7);
-   }
-
    
-
-   .semicircle-upper , .semicircle-lower {
-    height:0px;
+   .contentwrapper::before {
+    position: absolute;
+    left: 0;
+    top:0;
+    bottom:0;
+    width:4vw;
+    background-image: url(../img/stuff.webp);
+    background-size:150% auto;
+    content: "";
+    animation-name: background-move;
+    animation-duration: 300s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
    }
 
- .semicircle-upper{
-    transition: 500ms;
-    transform: scale(1) translateY(1px);
- }
+   @keyframes background-move{
+    0%{
+      background-position:-12px 0px;
+    }
+    100%{
+      background-position:-12px 4000px;
+    }
+    
 
-   
+  }
 
 
-   .semicircle-lower{
-    transform: translateY(-1px);
+   .curiosity {
+    width:110vw;
+    height:36.666vw;
+    background-image:url(../img/curiosity-sprite.svg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:100% 0;
+    animation-name:curiosity-move ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1, start);
+    margin-left:-5vw;
+    position:absolute;
+    top:53%;
+    margin-top:-16vw;
+    z-index: 10;
+    
    }
 
-   .semicircle-upper > img , .semicircle-lower > img {
+   .curiosity > h1{
+    display: none;
+   }
+
+   @keyframes curiosity-move {
+
+    0%{
+      background-position:100% 0%;
+    }
+    25%{
+      background-position:100% 0%;
+    }
+
+    50%{
+      background-position:100% 33.333%;
+    }
+
+    75%{
+      background-position:100% 66.666%;
+    }
+
+    100%{
+      background-position:100% 100%;
+    }
+   }
+
+
+
+   img {
     width:100%;
     height:auto;
    }
 
-   .semicircle-upper > img{
-    transform:translateY(-100%);
-   }
-
-    .semicircle-lower > img {
-    transform:translateY(0%);
-   }
-
- 
-
-   .conference-inner {
-    max-width: 1024px;
-    margin:0 auto;
-    padding:0 2em;
-   }
-
-   .conference-item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2vw;
-   }
-
-    .conference-item .conference-item--col-1 {
-    opacity: 0;
-    transform: scale(.8);
-    transition: 500ms;
-    }
-
-    .conference-item.active .conference-item--col-1 {
-    transition-delay: 300ms;
-    opacity:1;
-    transform: scale(1);
-   }
-
-    .conference-item .conference-item--col-2 {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: 500ms;
-    }
-
-   .conference-item.active .conference-item--col-2 {
-    transition-delay: 300ms;
-    opacity:1;
-    transform: translateY(0px);
-   }
-
-   
-   
-
-   .conference-item h4 {
-      font-weight: 500;
-      font-size: 72px;
-      line-height: 86%;
-      margin:.3em 0;
-   }
-   .conference-item h5 {
-    font-weight: 300;
-   }
-    .conference-item:nth-child(odd) {
-    flex-direction: row-reverse;
-   }
-
-   .conference-item--col-1, .conference-item--col-2 {
-    width: 48%;
-   }
-
-   .conference-item--col-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   }
-
-   .conference-item--col-1 > img {
-    width: 100%;
-    height:auto;
-   }
-
-   .sponsors{
-    text-align: center;
-    max-width: 800px;
-    margin:40px auto;
-    padding:2em;
-   }
-
-   .sponsors p{
-    opacity:80%;
-   }
-   .nav{
-    display: flex;
-    justify-content: space-between;
-        max-width: 1080px;
-     margin:0 auto;
-     align-items: center;
-     padding:3em 3em 0 3em;
-   }
-
-   .nav a {
-      font-weight: 700;
-      font-size: 18px;
-      padding:1em;
-      text-decoration: none;
-   }
-
-   a.nav-button {
-    padding:.6em 1em;
-   }
-
-   .adobe-logo{
-    max-width:200px;
-    height:auto;
-   }
-   .additional-logos {
-
-   }
-   .additional-logos img {
-    max-width: 150px;
-    margin:20px;
-   }
-   .aigalogo {
-    width:20%;
+   .aiga-logo{
     min-width: 150px;
-   }
-   .aigalogo img{
-    width:100%;
-    height:auto;
-   }
-   .navitems {
-
-   }
-   .navitems ul{
-    list-style: none;
-    margin:0;
-    padding: 0;
-   }
-   .navitems ul li{
-    display: inline-block;
-   }
-   
-   
-   .footer {
-    background:#0F2546;
-    font-weight:900;
-    padding:3em 3em;
+    width:12%;
+    position: absolute;
+    left:0px;
+    top:10%;
+    left: 5%;
    }
 
-   .footer p{
-    margin:0;
-    
-   }
-
-   .footer a{
-    margin-right:1em;
-    padding:1em 0;
-   }
-
-   .footer-wrap{
-     display:flex;
-     max-width: 1080px;
-     margin:0 auto;
-       justify-content: space-between;
-   }
-
-   .footer-logo img{
-    max-width:200px;
-    margin-bottom:3em;
-   }
-
-   .footer-logo{
-    
-   }
-
-   .footercol-1 {
-    margin:0 30px;
-   }
-
-   #mc_embed_shell {
-    background:none;
-    max-width: 360px;
-    border-left: solid 1px rgba(255,255,255,.3);
-    padding: 0 0 0 3em;
-   }
-   #mc_embed_signup {
-    width:100%;
-    
-   }
-   #mc_embed_signup_scroll h2{
-    font-size: 24px;
-    margin:0 0 .6em 0;
-    line-height:100%;
-    color:#B7A0EA;
-   }
-   .mc-field-group{
-    width:100%;
+   .intro-text {
+    max-width:300px;
+    position: absolute;
+    top:5%;
+    left: 51%;
+    padding-right:3em;
 
    }
 
-   .mc-field-group:nth-child(4){
-width:48%;
-margin-right:4%;
-float:left;
-   }
-   .mc-field-group:nth-child(5){
-width:48%;
-float:left;
-   }
-   .indicates-required{
-    font-weight: 500;
-    margin-bottom: 1em;
-   }
-
-   #mc_embed_signup_scroll label{
-    font-size: 16px;
-    margin:0 0 1em 0;
-    font-weight: 500;
-   }
-   .asterisk{
-    color:#B7A0EA;
-   }
-
-   #mc_embed_signup_scroll input[type=text],#mc_embed_signup_scroll input[type=email]{
-    width:100%;
-    height:45px;
-    font-size: 16px;
-    text-indent: 1em;
-    background:#b8a0ea31;
-    border: none;
-    margin:.5em 0;
-    color:#ffffff
-   }
-
-   #mc-embedded-subscribe{
-    width:100%;
-    height:45px;
-    font-size: 16px;
-    background:#B7A0EA;
-    border: none;
-    margin:.5em 0;
-    font-weight:800;
-    transition: 300ms;
-   }
-
-   #mc-embedded-subscribe:hover{
-    background:#ffffff;
-    cursor: pointer;
+   .df-logo {
+    position: relative;
+    width:25%;
+    top:12%;
+    left: 8%;
 
    }
-   strong {
-    font-weight: 900;
+
+   .year-type {
+    position: relative;
+    width:15%;
+    top:6%;
+    left: 50%;
+   }
+
+   .bottom-text{
+    position: absolute;
+    bottom:5%;
+    left: 5%;
+    padding-right:3em;
+    max-width:300px;
+   }
+
+   .eye{
+    background-image: url(../img/eye.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:40vw;
+    height:30vw;
+    position: absolute;
+    bottom:-5vw;
+    right:-10vw;
+   }
+
+  @media (max-width: 800px) {
+    .contentwrapper {
+      min-height: 600px;
+    }
+  }
+
+   @media (max-width: 600px) {
+    .contentwrapper {
+      min-height: 500px;
     }
 
     
+  }
 
 
-   #mc_embed_signup{}
-        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 
-   @media (max-width: 800px) {
-      .nav {
-       display: block;
-       padding:2em;
-      }
-      .aigalogo {
-        width:20%;
-        margin:0 auto;
-      }
 
-      #bm {
-        margin-top: -40px;
-        
-      }
-      
-      .nav a {
-        padding:.6em;
 
-      }
-      .nav ul {
-        padding:2em 0;
-        text-align: center;
-      }
-      .event-items-wrapper {
-        display: block;
-        margin-top:0;
-      }
-      .event-item {
-        width:100%;
-        margin-bottom:0px;
-      }
 
-      
-
-      
-      
-      .event-item:nth-child(odd) {
-    margin-top:0;
-    margin-bottom:0;
-    text-align: left;
-   }
-      .footer {
-        text-align: left;
-        padding: 3em 2em;
-      }  
-      .footer-wrap{
-        display: block;
-        padding: 0;
-      }
-      .footercol-1 {
-       margin:2em 0px;
-      }
-      .footer-logo{
-        max-width: 200px;
-        
-      }
-      .sponsors{
-        text-align: left;
-      }
-      #mc_embed_shell {
-    background:none;
-    max-width: 1000px;
-    border-left: none;
-    border-top: solid 1px rgba(255,255,255,.3);
-    padding: 3em 0 0 0;
-    margin-top: 3em;
-   }
-
-   .logo h4 {
-    font-size: 30px;
-    margin-top:0;
-   }
-
-    .conference-item {
-    display: block;
-    margin-bottom:30px;
-   }
-
-      .conference-item--col-1, .conference-item--col-2 {
-    width: 100%;
-   }
-   
-   .conference-item h4 {
-    font-size: 50px;
-    margin: 20px 0;
-   }
-
-   .conference-intro.event-item h4 {
-font-size: 40px;
-}
-
-    }
-
-    
 
 /* ==========================================================================
    Helper classes
