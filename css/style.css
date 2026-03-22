@@ -87,12 +87,15 @@ textarea {
    body {
     background-color: #F9D830;
     overflow-x: hidden;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     font-size: 14px;
     margin:0;
     height:100%;
    }
    
+   p {
+    color: rgba(0,0,0,.7);
+   }
    
 
    .contentwrapper {
@@ -107,9 +110,9 @@ textarea {
     left: 0;
     top:0;
     bottom:0;
-    width:4vw;
+    width:8vw;
     background-image: url(../img/stuff.webp);
-    background-size:150% auto;
+    background-size:100% auto;
     content: "";
     animation-name: background-move;
     animation-duration: 300s;
@@ -119,10 +122,10 @@ textarea {
 
    @keyframes background-move{
     0%{
-      background-position:-12px 0px;
+      background-position:0px 0px;
     }
     100%{
-      background-position:-12px 4000px;
+      background-position:0px 4000px;
     }
     
 
@@ -205,23 +208,28 @@ textarea {
     position: absolute;
     left:0px;
     top:10%;
-    left: 5%;
+    left: 9%;
    }
 
    .intro-text {
-    max-width:300px;
+    max-width:600px;
     position: absolute;
     top:5%;
     left: 51%;
     padding-right:3em;
+    display: flex;
 
+   }
+
+   .intro-text .col-1 {
+    margin-right:30px
    }
 
    .df-logo {
     position: relative;
     width:25%;
     top:12%;
-    left: 8%;
+    left: 12%;
 
    }
 
@@ -235,7 +243,7 @@ textarea {
    .bottom-text{
     position: absolute;
     bottom:5%;
-    left: 5%;
+    left: 9%;
     padding-right:3em;
     max-width:300px;
    }
@@ -253,14 +261,20 @@ textarea {
 
   @media (max-width: 800px) {
     .contentwrapper {
-      min-height: 600px;
+      min-height: 700px;
+    }
+
+    .intro-text {
+      display: block;
     }
   }
 
    @media (max-width: 600px) {
     .contentwrapper {
-      min-height: 500px;
+      min-height: 700px;
     }
+
+    
 
     
   }
