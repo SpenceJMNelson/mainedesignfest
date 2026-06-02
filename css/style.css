@@ -84,6 +84,33 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .announcement {
+    width:90%;
+    max-width: 600px;
+    height:auto;
+    background:#9747FF;
+    padding:20px;
+    margin-left:9vw;
+    box-sizing: border-box;
+    margin-right:3vw;
+    z-index: 999;
+    position:relative;
+    
+   }
+
+   .announcement-heading {
+    font-size:30px;
+    font-weight: 700;
+    font-family: freight-display-pro, serif;
+    color:white;
+   }
+
+   .announcement p{
+    font-size: 16px;
+    font-weight: 500;
+    color:white;
+   }
+
    body {
     background-color: #F9D830;
    font-family: neue-haas-grotesk-display, sans-serif;
@@ -107,6 +134,7 @@ textarea {
     
 
    }
+  
 
    .nav h3 a {
     padding:1em;
@@ -258,8 +286,8 @@ textarea {
     bottom:5%;
     left: 9%;
     padding-right:3em;
-    max-width:300px;
-    font-size:16px;
+    max-width:350px;
+    font-size:21px;
    }
 
    .eye{
@@ -511,13 +539,14 @@ textarea {
    .sponsors{
     text-align: center;
     margin:0 auto;
-    padding:10px 20vw;
+    padding:40px 20vw;
     
    }
 
    .sponsors p{
     opacity:80%;
     color:white;
+    font-size: 21px;
    }
 
    .adobe-logo{
@@ -649,6 +678,18 @@ float:left;
     }
 
 /* Scroll Animations */
+
+      .announcement {
+        opacity: 0;
+        transform: translateY(100px);
+        transition:1000ms;
+      }
+
+      .announcement.active{
+        opacity: 1;
+        transform: translateY(0px);
+
+      }
 
     .event-layer .event-info-date{
         opacity: 0;

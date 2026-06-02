@@ -21,10 +21,13 @@
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="https://use.typekit.net/ult1not.css">
 </head>
+
+
+
 <div class="contentwrapper">
     <div class="nav">
       <div class="aiga-logo"><img src="img/aiga-maine-logo.svg"></div>
-          <h3><a href="#events">Events</a><a href="#become-a-sponsor">Become a Sponsor</a><a href="#accommodations">Accommodations</a></h3>
+          <h3><a href="#announcement">Accommodations</a><a href="#events">Events</a><a href="#become-a-sponsor">Become a Sponsor</a></h3>
       <a href="https://2026-Maine-Design-Fest-Conference.eventbrite.com" class="event-button">
         <span class="event-info-cta">Register&nbsp;Now</span><span class="event-info-price">Eventbrite.com</span></a>
     </div>
@@ -45,6 +48,14 @@
     <div class="eye">
 
     </div>
+</div>
+
+<div class="announcement scrollhide" id="announcement">
+<span class="announcement-heading">Accommodations</span>
+<p>Thanks to our friends at Portland’s <strong>Holiday Inn By the Bay</strong>, we’ve secured a small block of discounted double rooms for $259/night (plus taxes and fees) for any or all of the nights of August 6, 7, and 8.</p>
+<p><strong>To receive this discounted rate, rooms must be booked by June 8.</strong> Availability is limited, and the rate will expire sooner if the room block fills before then.</p>
+<a href="https://book.passkey.com/e/51271592?utm_source=6883&utm_medium=email&utm_campaign=300692378&trkid=616605609&linkid=4075131802" class="event-button">
+        <span class="event-info-price">Book by June 8th</span></a>
 </div>
 
 <div class="weeks-events" id="events">
@@ -426,6 +437,10 @@ tax-deductible.</p>
       })
 
       scrollTrigger('.conference-event', {
+          rootMargin: '0px 0px -200px 0px',
+      })
+
+      scrollTrigger('.announcement', {
           rootMargin: '0px 0px -200px 0px',
       })
 
