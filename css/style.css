@@ -490,8 +490,8 @@ textarea {
    }
    .conference-event{
     max-width:45vw;
-    padding:0 0 50px 100px;
-    border-left:#999 solid 5px;
+    padding:0 0px 75px 100px;
+    border-left:#ffffff2f solid 5px;
    }
 
    
@@ -539,7 +539,7 @@ textarea {
    .sponsors{
     text-align: center;
     margin:0 auto;
-    padding:40px 20vw;
+    padding:10px 20vw;
     
    }
 
@@ -770,12 +770,23 @@ float:left;
         transform: translateX(0px);
       }
 
-    .conference-event {
+    .conference-event > * {
         opacity: 0;
+        transform: translateX(20px);
         transition:1000ms;
       }
-    .conference-event.active {
+    .conference-event.active > *{
         opacity: 1;
+        transform: translateX(0px);
+      }
+
+      .conference-event::before{
+        transform: scale(0);
+        transition:1000ms;
+      }
+
+      .conference-event.active::before{
+        transform: scale(1);
       }
 
     
