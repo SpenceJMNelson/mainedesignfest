@@ -897,6 +897,13 @@ float:left;
   }
 
    @media (max-width: 600px) {
+
+    .nav h3 a {
+padding: .3em 0;
+text-decoration: none;
+color: black;
+display: block;
+}
     .contentwrapper {
       min-height: 0;
       height:auto;
