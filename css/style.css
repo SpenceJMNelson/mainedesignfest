@@ -86,27 +86,36 @@ textarea {
 
    body {
     background-color: #F9D830;
-    overflow-x: hidden;
-    font-family: monospace;
+   font-family: neue-haas-grotesk-display, sans-serif;
     font-size: 14px;
     margin:0;
-    height:100%;
+    overflow-x: hidden;
    }
    
    p {
     color: rgba(0,0,0,.7);
    }
+
+   a {
+    color:inherit
+   }
    
 
    .contentwrapper {
+    width:100vw;
     height:100vh;
-    min-height: 700px;
-    position: relative;
-    overflow: hidden;
+    
+
+   }
+
+   .nav h3 a {
+    padding:1em;
+    text-decoration: none;
+    color:black
    }
    
    .contentwrapper::before {
-    position: absolute;
+    position: fixed;
     left: 0;
     top:0;
     bottom:0;
@@ -202,13 +211,17 @@ textarea {
     height:auto;
    }
 
+   .nav {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    padding:3vw 3vw 0 9vw;
+    box-sizing: border-box;
+   }
+
    .aiga-logo{
     min-width: 150px;
     width:12%;
-    position: absolute;
-    left:0px;
-    top:10%;
-    left: 9%;
    }
 
    .intro-text {
@@ -246,6 +259,7 @@ textarea {
     left: 9%;
     padding-right:3em;
     max-width:300px;
+    font-size:16px;
    }
 
    .eye{
@@ -253,10 +267,524 @@ textarea {
     background-repeat: no-repeat;
     background-size: contain;
     width:40vw;
-    height:30vw;
+    height:40vw;
     position: absolute;
-    bottom:-5vw;
-    right:-10vw;
+    bottom:-15vw;
+    right:-2vw;
+   }
+
+   .weeks-events,.conference-layer {
+    padding-left:10vw;
+    padding-right:3vw;
+    box-sizing: border-box;
+   }
+
+   .event-layer {
+    display:flex;
+    width:100%;
+    opacity: 1;
+    justify-content: space-between;
+    margin:5vw 0;
+    align-content: center;
+    transition:1300ms
+   }
+  
+
+
+
+   .event-layer:nth-child(odd) {
+    flex-direction: row-reverse;
+   }
+
+   .event-info {
+    width:53%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   }
+
+   .event-info-date,.event-info-name,.event-info-people,.event-info-location,.conference-event-type,.conference-event-name{
+    display: block;
+   }
+
+   .event-info-date{
+    font-size: 2.5vw;
+   }
+
+   .event-info-name{
+    font-size: 7vw;
+    line-height:100%;
+   }
+
+   .event-info-people{
+    font-size: 2.5vw;
+    font-family: freight-display-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    line-height:100%;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .event-info-peopleimages {
+    display: flex;
+   }
+
+   .event-info-peopleimages .peopleimage-wrapper{
+    width: 7vw;
+    margin-right:-2vw;
+    border:.7vw #F9D830 solid;
+    border-radius: 100%;
+    height: 7vw;
+    overflow: hidden;
+   }
+
+    .event-info-peopleimages .peopleimage-wrapper:last-child{
+    margin-right:0px;
+   }
+
+   .event-info-peopleimages .peopleimage-wrapper img{
+    
+   }
+   
+
+   .event-info-location{
+    font-size: 1.6vw;
+
+   }
+
+   .event-info-location:last-of-type{
+    margin-bottom:20px;
+
+   }
+
+   .event-info-city {
+    font-weight: 700;
+   }
+
+    .event-info-city::after {
+    content:"";
+    width:1px;
+    height:20px;
+    background-color: #000;
+    display: inline-block;
+    margin:0 10px;
+   }
+
+   .event-button {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+   }
+   .event-info-price,.event-info-cta {
+    display: block;
+    padding:1em;
+    color:white
+   }
+   .event-info-price {
+    font-family: freight-micro-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+    background:black;
+   }
+
+   .event-info-cta {
+    display: block;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background:#9747FF;
+   }
+
+   .event-button:hover .event-info-price{
+    background:#9747FF;
+   }
+
+   .event-button:hover .event-info-cta{
+    background:#ffffff;
+    color:black;
+   }
+
+     .event-graphic {
+    width:43%;
+    position: relative;
+   }
+
+   .event-graphic .fancydate {
+    font-size: 20vw;
+    color:#9747FF;
+    font-family: freight-display-pro, serif;
+    font-weight: 300;
+    font-style: italic;
+    position: absolute;
+    left:0;
+    bottom:0;
+   }
+
+   .conference-layer {
+    background-color:black;
+    color:white;
+    background-image:url(../img/conferencebg.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:50%;
+   }
+   .conference-intro{
+    padding:10vw 0;
+   } 
+
+    .conference-intro img {
+      width:15vw;
+    }
+   .conference-intro h2{
+    font-family: freight-display-pro, serif;
+    font-weight: 700;
+    font-size: 10vw;
+    margin:0;
+   }
+
+   .conference-intro-time {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    margin-bottom:20px;
+    display: block;
+   }
+
+   .conference-order-block {
+    display: flex;
+   }
+   .conference-info-prices {
+    font-family: freight-micro-pro, serif;
+    margin-left:20px;
+   }
+   .conference-event{
+    max-width:45vw;
+    padding:0 0 50px 100px;
+    border-left:#999 solid 5px;
+   }
+
+   
+
+   .conference-event:last-child{
+
+    border-left:none;
+   }
+
+   .conference-event::before{
+    content:"";
+    display: block;
+    background-color: #9747FF;
+    width:20px;
+    height:20px;
+    position:absolute;
+    border-radius: 100%;
+    margin-left:-112px;
+    margin-top:-5px;
+   }
+  
+
+   .conference-event-type{
+    font-size: 2.5vw;
+   }
+   
+   .conference-event-name{
+    font-size: 4vw;
+    line-height: 100%;
+   }
+
+   .conference-event .event-info-peoplenames {
+    font-size: 1.6vw;
+    font-family: neue-haas-grotesk-display, sans-serif;
+   }
+
+    .conference-event .peopleimage-wrapper {
+    border-color:black;
+   }
+
+   .sponsors,.footer {
+    background:black;
+   }
+
+   .sponsors{
+    text-align: center;
+    margin:0 auto;
+    padding:10px 20vw;
+    
+   }
+
+   .sponsors p{
+    opacity:80%;
+    color:white;
+   }
+
+   .adobe-logo{
+    max-width:200px;
+    height:auto;
+   }
+   .additional-logos {
+
+   }
+   .additional-logos img {
+    max-width: 150px;
+    margin:20px;
+   }
+
+.footer {
+    background:black;
+    font-weight:900;
+    padding:3em 3em;
+    position: relative;
+    z-index: 5;
+   }
+
+   .footer p{
+    margin:0;
+    color:white;
+   }
+
+   .footer a{
+    margin-right:1em;
+    padding:1em 0;
+    color:white;
+   }
+
+   .footer-wrap{
+     display:flex;
+     max-width: 1080px;
+     margin:0 auto;
+       justify-content: space-between;
+   }
+
+   .footer-logo img{
+    max-width:200px;
+    margin-bottom:3em;
+   }
+
+   .footer-logo{
+    
+   }
+
+   .footercol-1 {
+    margin:0 30px;
+   }
+
+   #mc_embed_shell {
+    background:none;
+    max-width: 360px;
+    border-left: solid 1px rgba(255,255,255,.3);
+    padding: 0 0 0 3em;
+   }
+   #mc_embed_signup {
+    width:100%;
+    
+   }
+   #mc_embed_signup_scroll h2{
+    font-size: 24px;
+    margin:0 0 .6em 0;
+    line-height:100%;
+    color:white;
+   }
+   .mc-field-group{
+    width:100%;
+
+   }
+
+   .mc-field-group:nth-child(4){
+width:48%;
+margin-right:4%;
+float:left;
+   }
+   .mc-field-group:nth-child(5){
+width:48%;
+float:left;
+   }
+   .indicates-required{
+    font-weight: 500;
+    margin-bottom: 1em;
+    color:white
+   }
+
+   #mc_embed_signup_scroll label{
+    font-size: 16px;
+    margin:0 0 1em 0;
+    font-weight: 500;
+    color:white;
+   }
+   .asterisk{
+    color:white;
+   }
+
+   #mc_embed_signup_scroll input[type=text],#mc_embed_signup_scroll input[type=email]{
+    width:100%;
+    height:45px;
+    font-size: 16px;
+    text-indent: 1em;
+    background:#ffffff31;
+    border: none;
+    margin:.5em 0;
+    color:#ffffff;
+   }
+
+   #mc-embedded-subscribe{
+    width:100%;
+    height:45px;
+    font-size: 16px;
+    background:#ffffff;
+    border: none;
+    margin:.5em 0;
+    font-weight:800;
+    transition: 300ms;
+   }
+
+   #mc-embedded-subscribe:hover{
+    background:#ffffff;
+    cursor: pointer;
+
+   }
+   strong {
+    font-weight: 900;
+    }
+
+/* Scroll Animations */
+
+    .event-layer .event-info-date{
+        opacity: 0;
+        transform: translateX(20px);
+        transition:1000ms;
+      }
+    .event-layer.active .event-info-date{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+    .event-layer .event-info-name{
+        opacity: 0;
+        transform: translateX(20px);
+        transition:1000ms;
+        transition-delay: 200ms;
+      }
+
+      .event-layer.active .event-info-name{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      .event-layer .event-info-people{
+        opacity: 0;
+        transform: translateX(20px);
+        transition:1000ms;
+        transition-delay: 400ms;
+      }
+
+      .event-layer.active .event-info-people{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      .event-layer .event-info-location{
+        opacity: 0;
+        transform: translateX(20px);
+        transition:1000ms;
+        transition-delay: 600ms;
+      }
+
+      .event-layer.active .event-info-location{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      .event-layer .event-button{
+        opacity: 0;
+        transform: translateX(20px);
+        transition:1000ms;
+        transition-delay: 800ms;
+      }
+    .event-layer.active .event-button{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      .event-layer .event-graphic img{
+        opacity: 0;
+        transform: scale(.8);
+        transition:1000ms;
+        transition-delay: 0ms;
+      }
+    .event-layer.active .event-graphic img{
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      .event-layer .event-graphic .fancydate{
+        opacity: 0;
+        transform: translateX(20px);
+        transition:1000ms;
+        transition-delay: 0ms;
+      }
+    .event-layer.active .event-graphic .fancydate{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+    .conference-event {
+        opacity: 0;
+        transition:1000ms;
+      }
+    .conference-event.active {
+        opacity: 1;
+      }
+
+    
+
+
+   #mc_embed_signup{}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+   @media (max-width: 800px) {
+      .nav {
+       display: block;
+       padding: 2em 2em 2em 5em;
+      }
+      .aigalogo {
+        width:20%;
+        margin:0 auto;
+      }
+
+      #bm {
+        margin-top: -40px;
+        
+      }
+      .footer {
+        text-align: left;
+        padding: 3em 2em;
+      }  
+      .footer-wrap{
+        display: block;
+        padding: 0;
+      }
+      .footercol-1 {
+       margin:2em 0px;
+      }
+
+      .footercol-2 {
+      border:none;
+      padding:none;
+      margin-top: 3em;
+      }
+      .footer-logo{
+        max-width: 200px;
+        
+      }
+
+      #mc_embed_shell {
+        padding:0;
+        border:none;
+      }
+      
    }
 
   @media (max-width: 800px) {
@@ -267,17 +795,106 @@ textarea {
     .intro-text {
       display: block;
     }
+
+     .event-info-date{
+    font-size: 21px;
+   }
+
+   .event-info-name{
+    font-size: 44px;
+   }
+
+   .event-info-people{
+    font-size: 21px;
+   }
+
+   .event-info-location {
+    font-size: 16px;
+   }
+
+   .conference-intro-time {
+    font-size: 21px;
+   }
+
+   .conference-event-type{
+    font-size: 21px;
+   }
+   
+   .conference-event-name{
+    font-size: 35px;
+   
+   }
+
+   .event-info-peopleimages .peopleimage-wrapper{
+    width: 60px;
+    margin-right:-15px;
+    height: 60px;
+    border-width: 3px;
+   }
+
+   .conference-event {
+    padding-left:30px;
+   }
+   .conference-event::before {
+    margin-left: -43px;
+    }
+   .conference-event .event-info-peoplenames{
+    font-size: 16px;
+   }
+
   }
 
    @media (max-width: 600px) {
     .contentwrapper {
-      min-height: 700px;
+      min-height: 0;
+      height:auto;
     }
+
+    .curiosity {
+      position: static;
+      margin-top:0;
+    }
+
+    .bottom-text{
+      position: static;
+      margin-left:12vw;
+  
+      width:100%;
+      padding:0;
+    }
+
+    .eye{
+      display: none;
+    }
+
+    .conference-order-block {
+    display: block;
+   }
+
+   .event-layer {
+    display:block;
+    margin:30px 0;
+   }
+
+   .event-info {
+    width:100%;
+   }
+
+   .conference-event {
+    max-width: 100%;
+    padding: 0 0 50px 40px;
+    border-left: #999 solid 5px;
+    }
+
+  
 
     
 
     
   }
+
+
+  
 
 
 
