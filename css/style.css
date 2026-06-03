@@ -405,6 +405,7 @@ textarea {
     text-decoration: none;
     align-items: center;
    }
+   
    .event-info-price,.event-info-cta {
     display: block;
     padding:1em;
@@ -423,6 +424,11 @@ textarea {
     font-weight: 700;
     font-style: normal;
     background:#9747FF;
+   }
+
+   .button-inactive .event-info-cta {
+    background:#ffffff;
+    color:black;
    }
 
    .event-button:hover .event-info-price{
@@ -945,7 +951,9 @@ display: block;
     border-left: #999 solid 5px;
     }
 
-  
+    .fancydate{
+      display: none;
+    }
 
     
 
