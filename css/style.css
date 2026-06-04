@@ -131,7 +131,7 @@ textarea {
    .contentwrapper {
     width:100vw;
     height:100vh;
-    
+    min-height: 700px;
 
    }
   
@@ -188,23 +188,22 @@ textarea {
 
 
    .curiosity {
-    width:110vw;
-    height:36.666vw;
-    background-image:url(../img/curiosity-sprite.svg);
-    background-size:100%;
+    width: 100vw;
+    height: 35.33vw;
+    background-image: url(../img/curiosity-sprite.svg);
+    background-size: 110%;
     background-repeat: no-repeat;
-    background-position:100% 0;
-    animation-name:curiosity-move ;
+    background-position: 100% 0;
+    animation-name: curiosity-move;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(1, start);
-    margin-left:-5vw;
-    position:absolute;
-    top:53%;
-    margin-top:-16vw;
+    position: absolute;
+    top: 53%;
+    margin-top: -18vw;
     z-index: 10;
-    
-   }
+    }
+  
 
    .curiosity > h1{
     display: none;
@@ -213,22 +212,22 @@ textarea {
    @keyframes curiosity-move {
 
     0%{
-      background-position:100% 0%;
+      background-position:center 0%;
     }
     25%{
-      background-position:100% 0%;
+      background-position:center 0%;
     }
 
     50%{
-      background-position:100% 33.333%;
+      background-position:center 33.333%;
     }
 
     75%{
-      background-position:100% 66.666%;
+      background-position:center 66.666%;
     }
 
     100%{
-      background-position:100% 100%;
+      background-position:center 100%;
     }
    }
 
@@ -298,7 +297,7 @@ textarea {
     height:40vw;
     position: absolute;
     bottom:-15vw;
-    right:-2vw;
+    right:0vw;
    }
 
    .weeks-events,.conference-layer {
