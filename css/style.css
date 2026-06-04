@@ -893,8 +893,9 @@ float:left;
     padding-left:30px;
    }
    .conference-event::before {
-    margin-left: -43px;
+    margin-left: -53px;
     }
+
    .conference-event .event-info-peoplenames{
     font-size: 16px;
    }
@@ -947,7 +948,6 @@ display: block;
    .conference-event {
     max-width: 100%;
     padding: 0 0 50px 40px;
-    border-left: #999 solid 5px;
     }
 
     .fancydate{
