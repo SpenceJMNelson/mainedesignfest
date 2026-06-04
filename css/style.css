@@ -302,7 +302,7 @@ textarea {
 
    .weeks-events,.conference-layer {
     padding-left:10vw;
-    padding-right:3vw;
+    padding-right:5vw;
     box-sizing: border-box;
    }
 
@@ -324,7 +324,7 @@ textarea {
    }
 
    .event-info {
-    width:53%;
+    width:45%;
     display: flex;
     justify-content: center;
     flex-direction: column;
