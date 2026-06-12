@@ -343,6 +343,14 @@ textarea {
     line-height:100%;
    }
 
+   .event-info-subtitle{
+    font-size: 2.5vw;
+font-weight: 700;
+font-style: normal;
+line-height: 100%;
+margin-bottom:.6em;
+   }
+
    .event-info-people{
     font-size: 2.5vw;
     font-family: freight-display-pro, serif;
@@ -735,6 +743,18 @@ float:left;
         transform: translateX(0px);
       }
 
+      .event-layer .event-info-subtitle{
+        opacity: 0;
+        transform: translateX(20px);
+        transition:1000ms;
+        transition-delay: 450ms;
+      }
+
+      .event-layer.active .event-info-subtitle{
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
       .event-layer .event-info-location{
         opacity: 0;
         transform: translateX(20px);
@@ -867,6 +887,10 @@ float:left;
    }
 
    .event-info-people{
+    font-size: 21px;
+   }
+
+   .event-info-subtitle{
     font-size: 21px;
    }
 
