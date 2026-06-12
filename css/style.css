@@ -380,6 +380,16 @@ margin-bottom:.6em;
     overflow: hidden;
    }
 
+   .event-info-peopleimages .peopleimage-layer{
+    margin-right:-2.7vw;
+
+   }
+
+   .event-info-peopleimages .peopleimage-layer .peopleimage-wrapper:first-child{
+    margin-bottom:-2.7vw;
+
+   }
+
     .event-info-peopleimages .peopleimage-wrapper:last-child{
     margin-right:0px;
    }
